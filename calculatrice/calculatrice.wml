@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!DOCTYPE wml PUBLIC "-//WAPFORUM//DTD WML 1.2//EN"
+                     "http://www.wapforum.org/DTD/wml_1.2.xml">
+<wml>         
+  <card id="selection" title="Calculatrice">
+  <p>
+    Nombre 1 :
+    <input title="Premier nombre" format="*N" name="premiernombre" />
+  </p>
+  
+  <p>
+    Opérateur :
+    <select name="operateur" title="Opérateur">
+      <option value="+">Addition</option>
+      <option value="-">Soustraction</option>
+      <option value="*">Multiplication</option>
+      <option value="/">Division</option>
+    </select>
+  </p>
+
+  <p>
+    Nombre 2 :
+    <input title="Deuxième nombre" format="*N" name="deuxiemenombre" /><br/>
+  </p>
+  <p>
+    <a href="calculatrice.wmls#calcul($(premiernombre), $(deuxiemenombre))">Calculer</a>
+  </p>
+  </card>
+
+  <card id="resultat" title="Résultat">
+  <p>
+    Résultat:<br/>
+    $(premiernombre) $(operateur) $(deuxiemenombre) = $(resultatfinal)
+  </p>
+  <do type="accept" label="Prev">
+    <prev/>
+  </do>
+  </card>
+</wml>
