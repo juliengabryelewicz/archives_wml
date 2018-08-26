@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<!DOCTYPE wml PUBLIC "-//WAPFORUM//DTD WML 1.2//EN"
+                     "http://www.wapforum.org/DTD/wml_1.2.xml">
+<wml> 
+	<card>  
+		Numéro de téléphone: 
+		<input type="text" name=“numero”/> 
+		<do type=“accept" label="Appeler">
+			<go url=“wtai:cc/mc;$(numero)”/>
+		</do>
+	</card> 
+</wml>
